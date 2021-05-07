@@ -1,4 +1,4 @@
-package com.d4ndcats.easystoryapp.ui.slideshow
+package com.d4ndcats.easystoryapp.ui.hashtags
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.d4ndcats.easystoryapp.R
 
-class SlideshowFragment : Fragment() {
+class HashtagsFragment : Fragment() {
 
-    private lateinit var slideshowViewModel: SlideshowViewModel
+    private lateinit var hashtagsViewModel: HashtagsViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        slideshowViewModel =
-                ViewModelProvider(this).get(SlideshowViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_slideshow, container, false)
+        hashtagsViewModel =
+                ViewModelProvider(this).get(HashtagsViewModel::class.java)
+        val root = inflater.inflate(R.layout.hashtags, container, false)
         val textView: TextView = root.findViewById(R.id.text_slideshow)
-        slideshowViewModel.text.observe(viewLifecycleOwner, Observer {
+        hashtagsViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

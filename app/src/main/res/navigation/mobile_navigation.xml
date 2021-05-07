@@ -12,14 +12,30 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.d4ndcats.easystoryapp.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_write_post"
+        android:name="com.d4ndcats.easystoryapp.ui.post.CreatePostFragment"
+        android:label="@string/menu_post"
+        tools:layout="@layout/create_post" >
+        <action
+            android:id="@+id/action_nav_write_post_to_post_title_description"
+            app:destination="@id/post_title_description" />
+    </fragment>
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.d4ndcats.easystoryapp.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_hashtags"
+        android:name="com.d4ndcats.easystoryapp.ui.hashtags.HashtagsFragment"
+        android:label="@string/menu_search"
+        tools:layout="@layout/hashtags" />
+    <fragment
+        android:id="@+id/post_title_description"
+        android:name="com.d4ndcats.easystoryapp.ui.post.TitlePostCreate"
+        android:label="@string/write_post_text"
+        tools:layout="@layout/post_title_description" >
+        <action
+            android:id="@+id/action_post_title_description_to_nav_write_post"
+            app:destination="@id/nav_write_post" />
+        <action
+            android:id="@+id/action_post_title_description_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
 </navigation>

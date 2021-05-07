@@ -1,13 +1,13 @@
-package com.d4ndcats.easystoryapp.ui.gallery
+package com.d4ndcats.easystoryapp.ui.hashtags
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class GalleryViewModel : ViewModel() {
+class HashtagsViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is gallery Fragment"
+        value = ""
     }
     val text: LiveData<String> = _text
 }
