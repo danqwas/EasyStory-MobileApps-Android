@@ -8,6 +8,12 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_post">Nueva Publicación</string>
+    <string name="menu_search">Hashtags</string>
+    <string name="welcome_text">Bienvenido a EasyStory</string>
+    <string name="write_post_text">Escribe una publicación</string>
+    <string name="next_text">Siguiente</string>
+    <string name="input_title_text">Ingresa el Título</string>
+    <string name="input_description_text">Ingresa una descripción</string>
+    <string name="editar_publicaci_n">Editar Publicación</string>
 </resources>
