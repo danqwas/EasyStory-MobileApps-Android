@@ -16,4 +16,14 @@
     <string name="input_title_text">Ingresa el Título</string>
     <string name="input_description_text">Ingresa una descripción</string>
     <string name="editar_publicaci_n">Editar Publicación</string>
+    <string name="TODO">TODO</string>
+    <string name="search_hashtags_text">Buscar hashtags</string>
+    <string name="button_hashtag_1"># musica</string>
+    <string name="button_hashtag_2"># Hobbies</string>
+    <string name="button_hashtag_3"># deportes</string>
+    <string name="hashtags"># Hashtags</string>
+    <string name="post_hashtag">Publicaciones con</string>
+    <string name="todo">TODO</string>
+    <string name="title_post">Titulo de la publicación</string>
+    <string name="text_post_lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
 </resources>

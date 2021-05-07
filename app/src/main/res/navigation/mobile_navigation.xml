@@ -25,7 +25,11 @@
         android:id="@+id/nav_hashtags"
         android:name="com.d4ndcats.easystoryapp.ui.hashtags.HashtagsFragment"
         android:label="@string/menu_search"
-        tools:layout="@layout/hashtags" />
+        tools:layout="@layout/hashtags" >
+        <action
+            android:id="@+id/action_nav_hashtags_to_hashtag_postview"
+            app:destination="@id/hashtag_postview" />
+    </fragment>
     <fragment
         android:id="@+id/post_title_description"
         android:name="com.d4ndcats.easystoryapp.ui.post.TitlePostCreate"
@@ -38,4 +42,11 @@
             android:id="@+id/action_post_title_description_to_nav_home"
             app:destination="@id/nav_home" />
     </fragment>
+    <fragment
+        android:id="@+id/hashtag_postview"
+        android:name="com.d4ndcats.easystoryapp.ui.hashtags.HashtagPostView"
+        android:label="@string/menu_search"
+        tools:layout="@layout/post_view_hashtag" />
+
+
 </navigation>
